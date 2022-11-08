@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
   <div class="app">
     
     <div class="home">
-      <header class="header">
+      <header class="header container-mobile">
         <div class="logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
         </div>
@@ -36,8 +37,33 @@
             </li>
           </ul>
         </nav>
+        <div class="btn-toggle">
+          <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
       </header>
-      <section class="container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+            <li class="mobile-sidebar-item">
+              <a class="mobile-sidebar-link" href="#"><span>00</span> Home</a>
+            </li>
+            <li class="mobile-sidebar-item">
+              <a class="mobile-sidebar-link" href="./destination-moon.html"><span>01</span> Destination</a>
+            </li>
+            <li class="mobile-sidebar-item">
+              <a class="mobile-sidebar-link" href="./crew-commander.html"><span>02</span> Crew</a>
+            </li>
+            <li class="mobile-sidebar-item">
+              <a class="mobile-sidebar-link" href="./technology-vehicle.html"><span>03</span> Technology</a>
+            </li>
+        </ul>
+      </aside>
+      <section class="container container-mobile">
         <div class="home-content">
           <div class="home-card">
             <h2 class="home-card__sub-heading">So, you want to travel to</h2>
